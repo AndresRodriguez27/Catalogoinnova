@@ -1,0 +1,38 @@
+.section-s{
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+.contenido{
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido h1{
+  color: #9E32AF;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.hablemos-img{
+  width: 500px;
+}
+.contenido2{
+  text-align: justify;
+}
+
+.contenido2 h1{
+  font-size: 30px;
+}
+
+.atras{
+  font-size: 45px;
+  color: #9E32AF;
+}
+.tex{
+  color: #9E32AF;
+}
+
+
+

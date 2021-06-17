@@ -1,0 +1,250 @@
+
+/* principal dashboard */
+.div-info-principal{
+  /* display: grid; */
+  align-items: center;
+  justify-content: center;
+  /* height: 100%;
+  width: 100%; */
+}
+
+.div-info-principal h2{
+  font-size: 30px;
+  text-align: justify;
+}
+
+.row-info h2{
+  font-size: 25px;
+  text-align: justify;
+}
+
+.row-info{
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.inicio{
+  display: flex;
+  align-items: center;
+}
+
+.inicio img{
+  width:300px;
+  height: 100%;
+  }
+
+.inicio h1{
+  font-size: 43px;
+  color: rgb(97, 97, 97);
+}
+
+
+.content-item {
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.content-item:hover {
+  transform: translateY(-12px);
+}
+
+.content-item::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  right: 0;
+  margin: auto;
+  left: 0;
+  background: #FDEBEB;
+  border-radius: 50%;
+  width: 90%;
+  height: 70%;
+}
+
+.content-item:hover .ft-icon i {
+  background: #e73c3e;
+  color: #fff;
+}
+
+.content-item .ft-icon i {
+  color: #e73c3e;
+  height: 90px;
+  width: 90px;
+  line-height: 90px;
+  background-color: #fff;
+  font-size: 50px;
+  border-radius: 50px;
+  transition: .5s;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.content-item h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.content-item p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.mtop4 {
+  margin-top: -30px;
+}
+
+a.play-btn {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  font-size: 60px;
+  text-align: center;
+  line-height: 90px;
+  color: #e73c3e;
+  border-radius: 50%;
+  position: absolute;
+  right: 41%;
+  bottom: 55px;
+}
+
+a.play-btn::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 0;
+  left: 0;
+  background: #e73c3e;
+  border-radius: 50%;
+  animation: playbtn 1.5s ease-out infinite;
+}
+
+@keyframes playbtn {
+
+  0%,
+  30% {
+      transform: scale(0);
+      opacity: 1;
+  }
+
+  50% {
+      transform: scale(1.5);
+      opacity: .7;
+  }
+
+  100% {
+      transform: scale(2);
+      opacity: 0;
+  }
+}
+
+.finix-text {
+  position: relative;
+}
+
+.why-us-text .finix-text p {
+  margin-left: 0;
+}
+
+
+/* contenido-final */
+.contenido-final h1{
+  font-size:35px;
+}
+
+
+.redes2 img{
+  margin-left: 80px;
+  width: 99px;
+}
+
+.redes2 h1{
+  margin-left: 60px;
+}
+
+.cuadroredes{
+  width:46px;
+  height:200x;
+  background:rgba(214,211,211,.5);
+  position:fixed;
+  top:500px;
+  right:0;
+  z-index:999;
+  border-radius:10px 0 0 10px;
+  text-align:center;
+  padding-left:4px;
+  float:right;
+  margin-bottom:20px
+
+}
+
+
+.social-icons{
+  margin:0;padding:0
+}
+
+.social-icons li{
+  list-style:none;
+  margin-right:3px;
+  margin-bottom:5px;
+  text-indent:-9999px;
+  display:inline-block;
+}
+.social-icons li a,a.social-icon{
+  width:28px;
+  height:28px;
+  display:block;
+  background-repeat:no-repeat;
+  transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out
+}
+.social-icons-color li a{
+  opacity:.7;
+  background-position:0 -38px !important;
+  /* -webkit-backface-visibility:hidden */
+  }
+.social-icons-color li a:hover{opacity:1}
+
+@media(min-width: 1024px){
+  .logo-innova-emprende{
+     width: 600px;
+  }
+}
+@media(max-width: 998px){
+  .redes2 img{
+    margin-left: 120px;
+    width: 120px;
+    justify-content: center;
+
+  }
+  .redes2 h1{
+    margin-left: 100px;
+  }
+
+  .inicio{
+    display: grid;
+   margin-left: 60px;
+  }
+  .logo-innova-emprende{
+    width: 390px;
+  }
+  .logo-innova{
+    width: 390px;
+  }
+
+  .div-info-principal{
+    width: auto;
+  }
+}
+
+
