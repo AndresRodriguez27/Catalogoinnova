@@ -1,0 +1,28 @@
+.section-s{
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  
+  .contenido{
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contenido h1{
+    color: #d19921;
+    font-size: 50px;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  .atras{
+    font-size: 45px;
+    color: #9E32AF;
+  }
+  .tex{
+    color: #9E32AF;
+  }
+  
+  

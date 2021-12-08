@@ -4,28 +4,29 @@ span {
 }
 .main-header {
   /* background:#0f1113; */
-  background:#ffcc41;
+  background:#f7e9c4;
   height: 80px;
   /* border-bottom: solid 1px; */
 }
 img {
   max-width: 100%;
+  text-align: center;
 }
 
 .navbar-toggler{
   margin-bottom: 30px;
 }
 /*menu css*/
-.primary-menu{
-  background: #ffcc41;
+/*.primary-menu{
+  background: #fffefd;
   top: 1px;
 }
-
+*/
 ul.primary-menu li a {
     text-decoration: none;
     display: inline-block;
     padding: 10px 10px;
-    color: rgb(7, 7, 7);
+    color: rgb(252, 246, 246);
 
     font-size: 35px;
     font-weight: 600;
@@ -36,7 +37,7 @@ ul.primary-menu  {
 
 }
 ul.primary-menu a:hover {
-  background: #a88a13;
+  background: #d6f8f4;
 }
 
 ul.primary-menu li ul {
@@ -44,7 +45,7 @@ ul.primary-menu li ul {
    width: 170px;
   left: -10px;
   top: 50%;
-  background-color: #ffcc41;
+  background-color: #816312;
   list-style: none;
   padding: 10px;
   visibility: hidden;

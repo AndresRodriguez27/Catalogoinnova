@@ -22,6 +22,14 @@ import { ActualidadComponent } from './actualidad/actualidad.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { HablemosFundacionComponent } from './emprendimientos/social/hablemos-fundacion/hablemos-fundacion.component';
+import { GastronomiaComponent } from './emprendimientos/gastronomia/gastronomia.component';
+import { CubaSandwichComponent } from './emprendimientos/gastronomia/cuba-sandwich/cuba-sandwich.component';
+import { MedioComponent } from './emprendimientos/medio/medio.component';
+import { CepruComponent } from './emprendimientos/medio/cepru/cepru.component';
+import { ArtesaniaComponent } from './emprendimientos/artesania/artesania.componet';
+import { AguartesanaComponent } from './emprendimientos/artesania/aguartesana/aguartesana.component';
+import { SoftwowComponent } from './emprendimientos/social/softwow/softwow.component';
+import { KfrutComponent } from './emprendimientos/gastronomia/kfrut/kfrut.component';
 
 
 @NgModule({
@@ -34,7 +42,15 @@ import { HablemosFundacionComponent } from './emprendimientos/social/hablemos-fu
     SocialComponent,
     ActualidadComponent,
     ServiciosComponent,
-    HablemosFundacionComponent
+    GastronomiaComponent,
+    HablemosFundacionComponent,
+    CubaSandwichComponent,
+    MedioComponent,
+    CepruComponent,
+    ArtesaniaComponent,
+    AguartesanaComponent,
+    SoftwowComponent,
+    KfrutComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,43 @@
+.section-s{
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  
+  .contenido{
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contenido h1{
+    color: #ff2929;
+    font-size: 50px;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 900;
+  }
+
+    #segundo{
+    color: #ff2929;
+    font-size: 18px;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .atras{
+    font-size: 45px;
+    color: #9E32AF;
+  }
+  .tex{
+    color: #9E32AF;
+  }
+  
+
+  .footer-widget{
+    border-top: 1px solid #060707;
+    border-left: none;
+    justify-content: center;
+    align-items: center;
+  }
+    

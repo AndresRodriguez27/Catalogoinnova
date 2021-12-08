@@ -1,0 +1,84 @@
+.section-s{
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  
+  
+  .emprendimientos{
+    color: rgb(97, 97, 97);
+    }
+  
+    .texto-emprendimientos h4{
+      color: rgb(97, 97, 97);
+      font-family: 'Open Sans', sans-serif; font-size: 35px;
+    }
+  
+    .titulo-emprendimientos{
+      display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+  
+    .titulo-emprendimientos h1{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 50px;
+      color: rgb(149, 218, 153);
+    }
+  
+  
+    .team-image:hover .img-emprendimiento {
+      border-radius:50%;
+      -webkit-border-radius:50%;
+      box-shadow: 0px 0px 8px 8px #1ea0ec;
+      -webkit-box-shadow: 0px 0px 8px 8px #1ea0ec;
+    }
+  
+  
+  
+    .cuadroredes{
+      width:46px;
+      height:200x;
+      background:rgba(214,211,211,.5);
+      position:fixed;
+      top:500px;
+      right:0;
+      z-index:999;
+      border-radius:10px 0 0 10px;
+      text-align:center;
+      padding-left:4px;
+      float:right;
+      margin-bottom:20px
+  
+    }
+  
+  
+    .social-icons{
+      margin:0;padding:0
+    }
+  
+    .social-icons li{
+      list-style:none;
+      margin-right:3px;
+      margin-bottom:5px;
+      text-indent:-9999px;
+      display:inline-block;
+    }
+    .social-icons li a,a.social-icon{
+      width:28px;
+      height:28px;
+      display:block;
+      background-repeat:no-repeat;
+      transition:all .3s ease-in-out;
+      -o-transition:all .3s ease-in-out;
+      -ms-transition:all .3s ease-in-out;
+      -moz-transition:all .3s ease-in-out;
+      -webkit-transition:all .3s ease-in-out
+    }
+    .social-icons-color li a{
+      opacity:.7;
+      background-position:0 -38px !important;
+      /* -webkit-backface-visibility:hidden */
+      }
+    .social-icons-color li a:hover{opacity:1}
+  
