@@ -37,7 +37,7 @@ ul.primary-menu  {
 
 }
 ul.primary-menu a:hover {
-  background: #d6f8f4;
+  background: #fd7b7b;
 }
 
 ul.primary-menu li ul {
@@ -73,13 +73,15 @@ ul.primary-menu li:hover ul {
 }
 
 .header-c-info a {
-    color: #111;
+    color: rgb(2, 2, 2);
     text-decoration: none;
     font-weight: 800;
     font-size: 18px;
 }
 
-
+nav.navbar {
+  background-color: #d89292;
+}
 
 
 @media(min-width: 1024px){
