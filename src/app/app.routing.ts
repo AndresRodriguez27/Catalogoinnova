@@ -1,9 +1,7 @@
 import { HablemosFundacionComponent } from './emprendimientos/social/hablemos-fundacion/hablemos-fundacion.component';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { ActualidadComponent } from './actualidad/actualidad.component';
-import { AppComponent } from './app.component';
-import { EmprendimientosComponent } from './emprendimientos/emprendimientos.component';
 import { SocialComponent } from './emprendimientos/social/social.component';
 import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
 import { ServiciosComponent } from './servicios/servicios.component';
@@ -15,11 +13,7 @@ import { ArtesaniaComponent } from './emprendimientos/artesania/artesania.compon
 import { AguartesanaComponent } from './emprendimientos/artesania/aguartesana/aguartesana.component';
 import { SoftwowComponent } from './emprendimientos/social/softwow/softwow.component';
 import { KfrutComponent } from './emprendimientos/gastronomia/kfrut/kfrut.component';
-
-
-
-
-
+import { FormularioNoticiaComponent } from './actualidad/formulario-noticia/formulario-noticia.component';
 
 
 const appRoutes = [
@@ -36,11 +30,8 @@ const appRoutes = [
     { path: 'aguartesana', component: AguartesanaComponent },
     { path: 'softwow', component: SoftwowComponent },
     { path: 'kfrut', component: KfrutComponent },
-
-
-// },
+    { path: 'actualidad-admin', component: FormularioNoticiaComponent}
 ];
-
 
 
 @NgModule({

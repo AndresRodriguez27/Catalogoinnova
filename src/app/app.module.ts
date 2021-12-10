@@ -30,6 +30,10 @@ import { ArtesaniaComponent } from './emprendimientos/artesania/artesania.compon
 import { AguartesanaComponent } from './emprendimientos/artesania/aguartesana/aguartesana.component';
 import { SoftwowComponent } from './emprendimientos/social/softwow/softwow.component';
 import { KfrutComponent } from './emprendimientos/gastronomia/kfrut/kfrut.component';
+import { FormularioNoticiaComponent } from './actualidad/formulario-noticia/formulario-noticia.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpService } from './core/http.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -51,6 +55,7 @@ import { KfrutComponent } from './emprendimientos/gastronomia/kfrut/kfrut.compon
     AguartesanaComponent,
     SoftwowComponent,
     KfrutComponent,
+    FormularioNoticiaComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,9 +70,12 @@ import { KfrutComponent } from './emprendimientos/gastronomia/kfrut/kfrut.compon
     MatCardModule,
     MatMenuModule,
     MatTabsModule,
-    routing
+    routing,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  exports: [HttpClientModule],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

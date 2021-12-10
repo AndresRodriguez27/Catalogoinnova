@@ -1,0 +1,48 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="formNoticia" (ngSubmit)="crearTarjeta()">
+      <div class="mb-3">
+        <!-- <label for="exampleInputEmail1" class="form-label"
+          >Nombre de la Materia</label> -->
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          formControlName="nombre"
+          placeholder="Nombre de el docente"
+        />
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+
+      <div class="mb-3">
+        <!-- <label for="exampleInputEmail1" class="form-label"
+          >Nombre de la Materia</label> -->
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          formControlName="link"
+          placeholder="link"
+        />
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+
+      <div class="mb-3">
+        <!-- <label for="exampleInputEmail1" class="form-label"
+          >Nombre de la Materia</label> -->
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          formControlName="descripcion"
+          placeholder="descripcion"
+        />
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled] = "formNoticia.invalid">Crear Tarjeta</button>
+    </form>
+  </div>
+</div>
