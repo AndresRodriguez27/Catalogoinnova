@@ -1,21 +1,26 @@
+
+
 export class Tarjeta {
+  id: number;
   titulo: string;
-  actualidad: string;
-  url: string;
-  empresa: number;
+  fechaCreacion: string;
+  linkNoticia: string;
   descripcion: string;
+  foto: string;
 
   constructor(
+    id: number,
     titulo: string,
-    actualidad: string,
-    url: string,
-    empresa: number,
-    descripcion: string
+    fechaCreacion: string,
+    linkNoticia: string,
+    descripcion: string,
+    foto: string
   ) {
     this.titulo = titulo;
-    this.actualidad = actualidad;
-    this.url = url;
-    this.empresa = empresa;
+    this.linkNoticia = linkNoticia;
     this.descripcion = descripcion;
+    this.fechaCreacion = fechaCreacion;
+    this.id = id;
+    this.foto = foto;
   }
 }

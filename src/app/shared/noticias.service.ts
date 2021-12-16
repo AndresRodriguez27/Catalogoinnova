@@ -16,4 +16,11 @@ export class NoticiasService {
       this.http.optsName(' Login ')
     );
   }
+
+  public list() {
+    return this.http.doGet<Tarjeta[]>(
+      `https://innova-ufps-api.herokuapp.com/noticias`,
+      this.http.optsName(' Lista ')
+    );
+  }
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Tarjeta } from '../shared/model/Tarjeta';
+import { NoticiasService } from '../shared/noticias.service';
 
 @Component({
   selector: 'app-actualidad',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActualidadComponent implements OnInit {
 
-  constructor() { }
+  public listaDocentes: Observable<Tarjeta[]>;
+
+  constructor( protected sercicioNoticia: NoticiasService) { }
 
   ngOnInit(): void {
+    this.listaDocentes = this.sercicioNoticia.list();
+    this.listaDocentes.subscribe();
+    console.log(this.listaDocentes);
   }
+
+
+
 
 }
