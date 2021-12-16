@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NoticiasService } from 'src/app/shared/noticias.service';
@@ -6,16 +5,15 @@ import { NoticiasService } from 'src/app/shared/noticias.service';
 @Component({
   selector: 'app-formulario-noticia',
   templateUrl: './formulario-noticia.component.html',
-  styleUrls: ['./formulario-noticia.component.css']
+  styleUrls: ['./formulario-noticia.component.css'],
 })
 export class FormularioNoticiaComponent implements OnInit {
-
   public formNoticia: FormGroup;
 
   constructor(
     protected sercicioNoticia: NoticiasService,
     protected fb: FormBuilder
-    ) { }
+  ) {}
 
   ngOnInit(): void {
     this.formNoticia = this.fb.group({
@@ -28,22 +26,19 @@ export class FormularioNoticiaComponent implements OnInit {
   }
 
   public crearTarjeta() {
-   console.log(this.formNoticia.value.titulo)
-   console.log(this.formNoticia.value.descripcion)
-   console.log(this.formNoticia.value.linkNoticia)
-   
-   console.log(this.formNoticia.value.foto)
-   
-   
-    this.sercicioNoticia.registroTarjeta(this.formNoticia.value)
-    .subscribe(
-      (resp) => { 
-        console.log('pase')
-        console.log(resp) },
+    console.log(this.formNoticia.value.titulo);
+    console.log(this.formNoticia.value.descripcion);
+    console.log(this.formNoticia.value.linkNoticia);
+
+    console.log(this.formNoticia.value.foto);
+
+    this.sercicioNoticia.registroTarjeta().subscribe(
+      (resp) => {
+        console.log(resp);
+      },
       ({ error }) => {
         console.log(error);
       }
     );
   }
-
 }
