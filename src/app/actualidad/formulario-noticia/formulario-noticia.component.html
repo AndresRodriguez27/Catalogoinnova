@@ -1,3 +1,5 @@
+<app-my-nav></app-my-nav>
+
 <div class="card">
   <div class="card-body">
     <form [formGroup]="formNoticia" (ngSubmit)="crearTarjeta()">
@@ -9,8 +11,8 @@
           class="form-control"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
-          formControlName="nombre"
-          placeholder="Nombre de el docente"
+          formControlName="titulo"
+          placeholder="titulo de la noticia"
         />
         <div id="emailHelp" class="form-text"></div>
       </div>
@@ -23,7 +25,7 @@
           class="form-control"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
-          formControlName="link"
+          formControlName="linkNoticia"
           placeholder="link"
         />
         <div id="emailHelp" class="form-text"></div>
@@ -46,3 +48,6 @@
     </form>
   </div>
 </div>
+
+ <!-- fin seccion -->
+ <app-my-footer></app-my-footer>
