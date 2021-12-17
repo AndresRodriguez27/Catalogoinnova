@@ -10,14 +10,21 @@
       <mat-card>
         <div class="row">
           <div class="col-md-8">
-            <div class="row">
-              <h1>{{docente.fechaCreacion}}</h1>
+            <div class="row" id="fecha">
+              <h1 style="color: aliceblue;">{{docente.fechaCreacion}}</h1>
             </div>
             <div class="row">
-              <h1 style="font-family: 'Open Sans', sans-serif">
+              <h1 style="font-family: 'Open Sans', italic">
                 {{docente.titulo}}
               </h1>
             </div>
+            <div class="row">
+              <h2 style="font-family: 'Open Sans', italic">
+                {{docente.descripcion}}
+              </h2>
+            </div>
+
+
           </div>
           <div class="col-md-4">
             <img src="{{docente.foto}}" alt="" />
