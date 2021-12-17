@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Tarjeta } from 'src/app/shared/model/Tarjeta';
 import { NoticiasService } from 'src/app/shared/noticias.service';
 
 @Component({
@@ -25,6 +26,8 @@ export class FormularioNoticiaComponent implements OnInit {
     });
   }
 
+  
+
   public crearTarjeta() {
     console.log(this.formNoticia.value.titulo);
     console.log(this.formNoticia.value.descripcion);
@@ -32,7 +35,9 @@ export class FormularioNoticiaComponent implements OnInit {
 
     console.log(this.formNoticia.value.foto);
 
-    this.sercicioNoticia.registroTarjeta().subscribe(
+    tarjeta: Tarjeta
+
+    this.sercicioNoticia.registroTarjeta(this.formNoticia.value).subscribe(
       (resp) => {
         console.log(resp);
       },
